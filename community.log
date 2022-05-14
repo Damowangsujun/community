@@ -1,0 +1,123 @@
+2022-05-02 18:56:36.033  INFO 10864 --- [restartedMain] c.n.l.community.CommunityApplication     : Starting CommunityApplication using Java 1.8.0_301 on DESKTOP-H4MD43M with PID 10864 (D:\JavaFiles\community\target\classes started by Lenovo in D:\JavaFiles\nowcoder)
+2022-05-02 18:56:36.034 DEBUG 10864 --- [restartedMain] c.n.l.community.CommunityApplication     : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-02 18:56:36.035  INFO 10864 --- [restartedMain] c.n.l.community.CommunityApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-05-02 18:56:36.077  INFO 10864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-02 18:56:36.078  INFO 10864 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-02 18:56:37.019  INFO 10864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-02 18:56:37.026  INFO 10864 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-02 18:56:37.026  INFO 10864 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-02 18:56:37.076  INFO 10864 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-02 18:56:37.076  INFO 10864 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 998 ms
+2022-05-02 18:56:37.542  INFO 10864 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-02 18:56:37.660  INFO 10864 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-02 18:56:37.685  INFO 10864 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-02 18:56:37.693  INFO 10864 --- [restartedMain] c.n.l.community.CommunityApplication     : Started CommunityApplication in 2.054 seconds (JVM running for 2.757)
+2022-05-02 18:56:47.195  INFO 10864 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-02 18:56:47.195  INFO 10864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-02 18:56:47.198  INFO 10864 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-02 18:56:47.245  INFO 10864 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-02 18:56:47.344  INFO 10864 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-02 18:56:47.350 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.d.D.selectDiscussPostRows        : ==>  Preparing: select count(id) from discuss_post where status!=2 
+2022-05-02 18:56:47.369 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.d.D.selectDiscussPostRows        : ==> Parameters: 
+2022-05-02 18:56:47.387 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.d.D.selectDiscussPostRows        : <==      Total: 1
+2022-05-02 18:56:47.391 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.d.D.selectDiscussPosts           : ==>  Preparing: select id,user_id,title,content,type,status,create_time,comment_count,score from discuss_post where status!=2 order by type desc,create_time desc limit ?,? 
+2022-05-02 18:56:47.392 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.d.D.selectDiscussPosts           : ==> Parameters: 0(Integer), 10(Integer)
+2022-05-02 18:56:47.399 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.d.D.selectDiscussPosts           : <==      Total: 10
+2022-05-02 18:56:47.401 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2022-05-02 18:56:47.402 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==> Parameters: 11(Integer)
+2022-05-02 18:56:47.403 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : <==      Total: 1
+2022-05-02 18:56:47.404 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2022-05-02 18:56:47.404 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==> Parameters: 111(Integer)
+2022-05-02 18:56:47.406 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : <==      Total: 1
+2022-05-02 18:56:47.406 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2022-05-02 18:56:47.407 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==> Parameters: 149(Integer)
+2022-05-02 18:56:47.408 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : <==      Total: 1
+2022-05-02 18:56:47.408 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2022-05-02 18:56:47.408 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==> Parameters: 149(Integer)
+2022-05-02 18:56:47.410 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : <==      Total: 1
+2022-05-02 18:56:47.410 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2022-05-02 18:56:47.410 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==> Parameters: 149(Integer)
+2022-05-02 18:56:47.411 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : <==      Total: 1
+2022-05-02 18:56:47.412 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2022-05-02 18:56:47.412 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==> Parameters: 146(Integer)
+2022-05-02 18:56:47.415 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : <==      Total: 1
+2022-05-02 18:56:47.416 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2022-05-02 18:56:47.416 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==> Parameters: 145(Integer)
+2022-05-02 18:56:47.418 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : <==      Total: 1
+2022-05-02 18:56:47.419 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2022-05-02 18:56:47.419 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==> Parameters: 138(Integer)
+2022-05-02 18:56:47.420 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : <==      Total: 1
+2022-05-02 18:56:47.421 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2022-05-02 18:56:47.421 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==> Parameters: 138(Integer)
+2022-05-02 18:56:47.422 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : <==      Total: 1
+2022-05-02 18:56:47.422 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2022-05-02 18:56:47.422 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==> Parameters: 103(Integer)
+2022-05-02 18:56:47.423 DEBUG 10864 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : <==      Total: 1
+2022-05-02 19:01:02.295  INFO 10864 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-02 19:01:02.301  INFO 10864 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-02 19:01:22.145  INFO 10296 --- [restartedMain] c.n.l.community.CommunityApplication     : Starting CommunityApplication using Java 1.8.0_301 on DESKTOP-H4MD43M with PID 10296 (D:\JavaFiles\community\target\classes started by Lenovo in D:\JavaFiles\nowcoder)
+2022-05-02 19:01:22.147 DEBUG 10296 --- [restartedMain] c.n.l.community.CommunityApplication     : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-02 19:01:22.148  INFO 10296 --- [restartedMain] c.n.l.community.CommunityApplication     : No active profile set, falling back to 1 default profile: "default"
+2022-05-02 19:01:22.195  INFO 10296 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-05-02 19:01:22.196  INFO 10296 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-05-02 19:01:23.113  INFO 10296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-05-02 19:01:23.120  INFO 10296 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-02 19:01:23.120  INFO 10296 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-02 19:01:23.171  INFO 10296 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-02 19:01:23.171  INFO 10296 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 974 ms
+2022-05-02 19:01:23.584  INFO 10296 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-02 19:01:23.695  INFO 10296 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-05-02 19:01:23.721  INFO 10296 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-05-02 19:01:23.729  INFO 10296 --- [restartedMain] c.n.l.community.CommunityApplication     : Started CommunityApplication in 1.99 seconds (JVM running for 2.632)
+2022-05-02 19:01:36.800  INFO 16488 --- [main] com.neu.langsam.community.LoggerTests    : Starting LoggerTests using Java 1.8.0_301 on DESKTOP-H4MD43M with PID 16488 (started by Lenovo in D:\JavaFiles\community)
+2022-05-02 19:01:36.801 DEBUG 16488 --- [main] com.neu.langsam.community.LoggerTests    : Running with Spring Boot v2.6.7, Spring v5.3.19
+2022-05-02 19:01:36.802  INFO 16488 --- [main] com.neu.langsam.community.LoggerTests    : No active profile set, falling back to 1 default profile: "default"
+2022-05-02 19:01:38.846  INFO 16488 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-05-02 19:01:39.451  INFO 16488 --- [main] com.neu.langsam.community.LoggerTests    : Started LoggerTests in 3.046 seconds (JVM running for 3.919)
+2022-05-02 19:01:39.875 DEBUG 16488 --- [main] com.neu.langsam.community.LoggerTests    : debug log
+2022-05-02 19:01:39.876  INFO 16488 --- [main] com.neu.langsam.community.LoggerTests    : info log
+2022-05-02 19:01:39.876  WARN 16488 --- [main] com.neu.langsam.community.LoggerTests    : warn log
+2022-05-02 19:01:39.877 ERROR 16488 --- [main] com.neu.langsam.community.LoggerTests    : error log
+2022-05-02 19:07:21.023  INFO 10296 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-02 19:07:21.024  INFO 10296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-02 19:07:21.026  INFO 10296 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-05-02 19:07:21.081  INFO 10296 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-02 19:07:21.192  INFO 10296 --- [http-nio-8080-exec-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-02 19:07:21.198 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.d.D.selectDiscussPostRows        : ==>  Preparing: select count(id) from discuss_post where status!=2 
+2022-05-02 19:07:21.218 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.d.D.selectDiscussPostRows        : ==> Parameters: 
+2022-05-02 19:07:21.237 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.d.D.selectDiscussPostRows        : <==      Total: 1
+2022-05-02 19:07:21.244 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.d.D.selectDiscussPosts           : ==>  Preparing: select id,user_id,title,content,type,status,create_time,comment_count,score from discuss_post where status!=2 order by type desc,create_time desc limit ?,? 
+2022-05-02 19:07:21.244 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.d.D.selectDiscussPosts           : ==> Parameters: 0(Integer), 10(Integer)
+2022-05-02 19:07:21.250 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.d.D.selectDiscussPosts           : <==      Total: 10
+2022-05-02 19:07:21.251 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2022-05-02 19:07:21.251 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==> Parameters: 11(Integer)
+2022-05-02 19:07:21.254 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : <==      Total: 1
+2022-05-02 19:07:21.255 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2022-05-02 19:07:21.256 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==> Parameters: 111(Integer)
+2022-05-02 19:07:21.258 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : <==      Total: 1
+2022-05-02 19:07:21.259 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2022-05-02 19:07:21.259 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==> Parameters: 149(Integer)
+2022-05-02 19:07:21.261 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : <==      Total: 1
+2022-05-02 19:07:21.261 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2022-05-02 19:07:21.262 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==> Parameters: 149(Integer)
+2022-05-02 19:07:21.263 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : <==      Total: 1
+2022-05-02 19:07:21.263 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2022-05-02 19:07:21.264 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==> Parameters: 149(Integer)
+2022-05-02 19:07:21.265 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : <==      Total: 1
+2022-05-02 19:07:21.265 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2022-05-02 19:07:21.265 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==> Parameters: 146(Integer)
+2022-05-02 19:07:21.266 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : <==      Total: 1
+2022-05-02 19:07:21.267 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2022-05-02 19:07:21.267 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==> Parameters: 145(Integer)
+2022-05-02 19:07:21.268 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : <==      Total: 1
+2022-05-02 19:07:21.269 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2022-05-02 19:07:21.269 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==> Parameters: 138(Integer)
+2022-05-02 19:07:21.272 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : <==      Total: 1
+2022-05-02 19:07:21.272 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2022-05-02 19:07:21.273 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==> Parameters: 138(Integer)
+2022-05-02 19:07:21.274 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : <==      Total: 1
+2022-05-02 19:07:21.275 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==>  Preparing: select id, username, password, salt, email, type, status, activation_code, header_url, create_time from user where id = ? 
+2022-05-02 19:07:21.275 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : ==> Parameters: 103(Integer)
+2022-05-02 19:07:21.276 DEBUG 10296 --- [http-nio-8080-exec-1] c.n.l.c.dao.UserMapper.selectById        : <==      Total: 1
+2022-05-02 19:07:56.436  INFO 10296 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-02 19:07:56.442  INFO 10296 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
