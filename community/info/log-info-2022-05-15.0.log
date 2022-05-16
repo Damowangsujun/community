@@ -1,0 +1,12 @@
+2022-05-15 14:35:48,681 INFO [main] c.n.l.c.MailTest [StartupInfoLogger.java:55] Starting MailTest using Java 1.8.0_301 on DESKTOP-H4MD43M with PID 9224 (started by Lenovo in D:\JavaFiles\community)
+2022-05-15 14:35:48,689 INFO [main] c.n.l.c.MailTest [SpringApplication.java:640] No active profile set, falling back to 1 default profile: "default"
+2022-05-15 14:35:51,121 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-05-15 14:35:51,369 INFO [main] c.n.l.c.MailTest [StartupInfoLogger.java:61] Started MailTest in 3.263 seconds (JVM running for 4.292)
+2022-05-15 14:39:28,530 INFO [main] c.n.l.c.Test [StartupInfoLogger.java:55] Starting Test using Java 1.8.0_301 on DESKTOP-H4MD43M with PID 2396 (started by Lenovo in D:\JavaFiles\community)
+2022-05-15 14:39:28,542 INFO [main] c.n.l.c.Test [SpringApplication.java:640] No active profile set, falling back to 1 default profile: "default"
+2022-05-15 14:39:30,379 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-05-15 14:39:30,614 INFO [main] c.n.l.c.Test [StartupInfoLogger.java:61] Started Test in 2.502 seconds (JVM running for 3.384)
+2022-05-15 15:41:49,951 INFO [main] c.n.l.c.SensitiveTest [StartupInfoLogger.java:55] Starting SensitiveTest using Java 1.8.0_301 on DESKTOP-H4MD43M with PID 11112 (started by Lenovo in D:\JavaFiles\community)
+2022-05-15 15:41:49,953 INFO [main] c.n.l.c.SensitiveTest [SpringApplication.java:640] No active profile set, falling back to 1 default profile: "default"
+2022-05-15 15:41:51,761 INFO [main] o.s.b.a.w.s.WelcomePageHandlerMapping [WelcomePageHandlerMapping.java:57] Adding welcome page template: index
+2022-05-15 15:41:52,022 INFO [main] c.n.l.c.SensitiveTest [StartupInfoLogger.java:61] Started SensitiveTest in 2.597 seconds (JVM running for 3.406)

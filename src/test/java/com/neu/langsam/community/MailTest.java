@@ -31,6 +31,10 @@ public class MailTest {
         String process = templateEngine.process("mail/demo", context);
         mailClient.sendMail("2630319630@qq.com","欢迎你",process);
     }
+    @Test
+    public void test0() {
+        System.out.println("abc.def.gij.kl.mn".lastIndexOf("."));
+    }
 
 
 }

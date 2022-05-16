@@ -105,7 +105,8 @@ public class LoginController implements CommunityConstant {
             model.addAttribute("codeMsg","验证码不正确");
             return "/site/login";
         }
-
+        //测试错误日志
+        //Integer.parseInt("abc");
         int expiredSeconds = rememberMe ? REMEMBER_EXPIRED_SECONDS : DEFAULT_EXPIRED_SECONDS;
         Map<String, Object> map = userService.login(username,password,expiredSeconds);
         if(map.containsKey("ticket")) {
